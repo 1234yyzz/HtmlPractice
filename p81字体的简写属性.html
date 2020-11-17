@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体的简写属性</title>
+    <style>
+        div{
+            border: 1px red solid;
+            /*font 可以设置字体相关的所有属性
+                语法：
+                    font: 字体大小/行高 字体族
+                    行高可以省略不写
+
+              font-weight: 字重，字体加粗效果
+              font-style: 字体的风格
+            */
+            font: 50px/2  华文行楷;
+            font-weight: 100;
+        }
+    </style>
+
+    <script type="javascript" src="./js/jquery-3.5.1.min.js">
+        function fuuc(){
+            alert(1);
+            $("a").trigger("click");
+        }
+    </script>
+</head>
+<body>
+    <div>今天天气真不错</div>
+    <input type="button" value="123" onclick="fuuc()">
+
+</body>
+
+</html>

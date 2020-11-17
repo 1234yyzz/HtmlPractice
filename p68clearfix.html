@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clearfix</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 200px;
+            background-color: red;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 50px;
+            float: left;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 400px;
+            margin-left: 50px;
+        }
+        /**
+            同时解决高度塌陷和外边距重叠
+         */
+        .clearfix,
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1 clearfix">
+        <div class="box2 "></div>
+        <div class="box3 clearfix"></div>
+    </div>
+</body>
+</html>

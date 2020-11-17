@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图标字体</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="fonts/food/iconfont.css">
+    <style>
+        /*
+
+            图标字体（iconfont）
+                -在网页中经常需要使用一些图标，可以通过图片引入图标
+                 但是图片大小本身比较大，并且非常的不灵活
+                -所以在使用图标时，我们可以直接将图标设置为字体，
+                 然后通过font-face的形式来对字体进行引入
+                -这样我们就可以通过使用字体的形式来使用图标
+                -直接通过类名来使用图标字体
+        */
+        /*通过伪元素设置图标字体
+            1、找到要设置的图标元素，通过befor或者after进行选中
+            2、在content中设置字体的编码
+            3、设置字体的样式
+                fab
+                font-family: 'Font Awesome 5 Brands';
+
+                fas
+                font-family: 'Font Awesome 5 Free'
+                font-weight: 900
+
+
+        */
+        li::before{
+            content: '\f1b0';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #FF5E99;
+            margin-left: 10px;
+        }
+
+        /*aliFont图标字体css*/
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+            font-size: 400px;
+        }
+    </style>
+    <script src="fonts/food/iconfont.js"></script>
+</head>
+<body>
+    <i class="fas fa-bell" style="font-size: 20px"></i>
+    <i class="fab fa-accessible-icon"></i>
+    <i class="iconfont">&#xe605;</i>
+
+    <!--通过svg映入猜测图标字体-->
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-food-strawberry"></use>
+    </svg>
+</body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<!--通过实体来使用图标字体； &#x图标的编码-->
+<span class="fas">&#xf0f3;</span>
+</html>

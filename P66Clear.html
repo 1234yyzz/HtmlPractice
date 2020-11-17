@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clear</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #FF5E99;
+            float: left;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #FF5E99;
+            float: right;
+        }
+        /*如果不希望某个元素不受到浮动元素的影响，可以通过设置clear属性的值来清楚浮动元素对其的影响
+        可选值：
+            left: 清除左侧浮动元素对其的影响
+            right: 清除右侧浮动值对其的影响
+            both: 清除两侧中影响最大的那一侧
+        原理：清除浮动以后，浏览器会自动为元素添加一个上外边距，以使其位置不发生变化
+        */
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: powderblue;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

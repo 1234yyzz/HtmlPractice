@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .news{
+            width: 400px;
+            border-top: 1px solid grey;
+        }
+        .news-title{
+            height: 40px;
+            margin-left: 10px;
+            margin-top: -1px;
+            margin-bottom: 10px;
+            /*line-height: 60px;*/
+        }
+        .news-title h1{
+            height: 60px;
+            display: inline-block;
+            border-top: 1px solid red;
+        }
+        .news-title a{
+            color: black;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        .news-title a:hover{
+            color: red;
+        }
+        .title-img{
+            width: 400px;
+            margin-left: 10px;
+        }
+        .title-img img{
+            width: 400px;
+        }
+        .title-img a{
+            color: white;
+            text-decoration: none;
+        }
+        .title-img h2{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: -40px;
+            margin-bottom: 30px;
+        }
+        .title-list{
+            margin-left: -12px;
+        }
+        .title-list li{
+            margin-bottom: 4px;
+        }
+        .title-list li:before{
+            content: "_";
+        }
+        .title-list a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .title-list a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="news-title">
+            <h1>
+                <a href="javascript:;">体育</a>
+            </h1>
+        </div>
+        <div class="title-img">
+            <a href="http://www.baidu.com" target="_blank">
+                <img src="../img/wallhaven-zmw21v_3840x2160.png"/>
+                <h2>枪炮`病菌与钢铁</h2>
+            </a>
+        </div>
+        <div class="title-list">
+            <ul>
+                <li><a href="javascript:;">乔治:我爱LA 喜欢和詹姆斯一起打球</a></li>
+                <li><a href="javascript:;">格林:3年前降薪就在等KD 特别T恤嘲讽LBJ</a></li>
+                <li><a href="javascript:;">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震撼</a></li>
+                <li><a href="javascript:;">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

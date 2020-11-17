@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子轮廓</title>
+    <style>
+        .box1{
+            width: 50px;
+            height: 10px;
+            border: rgba(0,0,0, 3);
+            /*background-color: greenyellow;*/
+            /*border: 10px solid blue;*/
+            /*
+                轮廓， 用来设置元素的轮廓线，用法和border一样
+                轮廓和border不同的地方是不会影响到可见框的大小
+            */
+            /*outline: 10px solid red;*/
+            /*用来设置元素的阴影效果, 不影响内容区的大小
+                第一个值是水平偏移量，正值向右，负值向左
+                第二个值是垂直偏移量，正值向下，负值向上
+                第三个值是阴影的模糊半径
+                第四个值是阴影的颜色
+            */
+            box-shadow: 1px 1px 10px rgba(299,299,29, 1);
+
+
+            /*border-radius: 10px 20px;*/
+            /*border-top-left-radius: 100px 200px;*/
+            /*border-top-right-radius: ;
+            border-bottom-left-radius: ;
+            border-bottom-right-radius: ;*/
+
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="box1"></div>-->
+    <input class="box1">
+</body>
+</html>

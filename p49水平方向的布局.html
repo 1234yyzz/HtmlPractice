@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平方向布局</title>
+</head>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px seagreen solid;
+        }
+        .inner {
+            width: auto;
+            height: 200px;
+            background-color: rebeccapurple;
+            margin-left: auto;
+            margin-right: auto;
+            /**
+                元素水平方向布局：
+                    元素在其父元素中，由一下几个属性共同决定
+                        margin-left
+                        border-left
+                        width
+                        padding-left
+                        border-left
+                        margin-left
+                    一个元素在其父元素中，水平布局必须满足一下等式：
+
+             */
+
+        }
+    </style>
+<body>
+    <div class="outer">
+        <div style="width: 50%"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

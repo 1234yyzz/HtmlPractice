@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音视频</title>
+</head>
+<body>
+
+    <!--audio标签用来向页面中引入一个外部的音频文进
+    音视频文件引入时，默认情况下不允许用户自己控制播放停止
+
+    属性controls: 是否允许用播放
+    autoplay: 音频文件是否会自动播放， 如果设置了autoplay, 则音乐在打开页面时会自动播放，但是大部分浏览器现在都不支持
+    loop: 音乐循环播放
+    -->
+    <p>
+        <audio src="./source/伍佰%20&%20China%20Blue%20-%20梦醒时分.flac" controls autoplay loop></audio>
+    </p>
+    <p>
+        <audio controls>
+            对不起，您的浏览器不支持播放音频，请升级浏览器
+            <source src="./source/伍佰%20&%20China%20Blue%20-%20梦醒时分.flac">
+            <source src="./source/伍佰%20&%20China%20Blue%20-%20梦醒时分.flac">
+        </audio>
+
+
+    </p>
+    <iframe src="//player.bilibili.com/player.html?aid=4096367&bvid=BV1Xs411Q7Np&cid=6628091&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    <video controls>
+        <source src="http://E:\迅雷下载\凤梧洞战斗.The.Battle.Roar.To.Victory.2019.BD720P.韩语中字.BTDX8\凤梧洞战斗.The.Battle.Roar.To.Victory.2019.BD720P.韩语中字.BTDX8.mp4">
+    </video>
+</body>
+</html>

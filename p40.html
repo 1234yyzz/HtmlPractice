@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>像素</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+        }
+        .box2{
+            width: 50%;
+            height: 50%;
+            background-color: #ff48dc;
+        }
+        /*
+            em是相对于元素的字体大小来计算的
+            1em = 1font-size;
+            em会根据字体大小的改表而改变
+
+            rem是相对于根元素的字体大小来计算的
+        */
+        .box3{
+            font-size: 1px;
+            width: 10em;
+            height: 10em;
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+<body>http://127.0.0.1:8082/files/build.txt
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <a href="./img/wallhaven-r2kgv7.jpg" download="yihao-ren-bei3.jpg"><span>下载1</span></a>
+        <a href="javascript:;" onclick="downloadFile('http://127.0.0.1:8082/files/build.txt','build.txt')" download="build.txt"><span>下载2</span></a>
+    </div>
+</body>
+
+<script>
+
+</script>
+
+</html>

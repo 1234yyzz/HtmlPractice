@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位的布局</title>
+    <style>
+        /**
+            水平布局
+                left + margin-left + border + padding-left + width + padding-right + border + margin-right + right = 包含块内容去的宽度
+                当我们开启绝对定位之后，水平方向的布局需要添加left和right
+                如果九个值中没有auto,则自动调整right值以使等式成立
+                如果有auto则自动调整auto的值以使等式成立
+                必须设置left和right的值，因为left和right的值是默认为auto的，所以如果不知道left和right,则等式不成立，会自动调整这两个属性值以满足等式成立
+
+
+            垂直方向布局的等式也必须满足
+                top + margin-top/bottom + padding-top/bottom + height = 包含块的垂直高度
+
+                可以利用这个特点使得元素在包含块中垂直居中
+
+         */
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            position: relative;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

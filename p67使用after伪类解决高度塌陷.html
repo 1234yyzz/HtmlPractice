@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用after伪类解决高度塌陷</title>
+    <style>
+        .box1{
+            border: 10px solid red;
+           /* overflow: hidden;*/
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+        }
+        /*::after默认使行内元素*/
+        .box1::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
