@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>京东导航条</title>
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.1-web/css/all.css">
     <script src="../fonts/site/iconfont.js"></script>
     <style>
         body{
@@ -11,53 +12,63 @@
         nav{
             width: 100%;
             height: 30px;
-            background-color: darkgrey;
+            background-color: #E3E4E5;
             position: fixed;
             top: 0;
+            border-bottom: 1px #ddd solid;
         }
         nav .tab{
             width: 70%;
             margin: 0 auto;
         }
+        .tab a{
+            display: inline-block;
+            color: dimgrey;
+            text-decoration: none;
+            font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;;
+            margin: 0 5px;
+            line-height: 30px;
+        }
         .site{
             height: 30px;
             float: left;
         }
+        .site a{
+            margin: 0;
+        }
         .site .icon {
             width: 30px;
-            height: 30px;
+            height: 29px;
             vertical-align: -0.15em;
             fill: currentColor;
             overflow: hidden;
             float: left;
         }
-        .site a{
-            display: inline-block;
-            height: 30px;
-            color: dimgrey;
-            text-decoration: none;
-            /*font-family: 黑体;*/
-            font-size: 1px;
-            line-height: 20px;
-        }
         .menu{
             height: 30px;
             float: right;
-            line-height: 30px;
             vertical-align: top;
-        }
-        .menu a{
-            display: inline-block;
-            color: dimgrey;
-            text-decoration: none;
-            font-size: 1px;
-            margin: 0 10px;
         }
         .menu a:first-child{
             margin-right: 5px;
         }
         .menu .red_text{
             color: red;
+        }
+        .menu .line{
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+        }
+        .menu .font_change_color:hover{
+            color: red;
+        }
+        .expend{
+            padding: 0 5px 1px 5px;
+        }
+        .expend:hover{
+            background-color: white;
         }
     </style>
 </head>
@@ -67,38 +78,55 @@
     <div>
         <nav>
             <div class="tab">
-                <div class="site">
-                    <svg class="icon" aria-hidden="true">
-                        <use xlink:href="#icon-ziyuan4"></use>
-                    </svg>
-                    <a href="javascript:;">
-                        北京
-                    </a>
+                <div class="site expend">
+                    <div>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-ziyuan4"></use>
+                        </svg>
+                        <a href="javascript:;">
+                            <span>北京</span>
+                        </a>
+                    </div>
+                    <div class="expend_model">
+
+                    </div>
                 </div>
                 <div class="menu">
                     <a href="javascript:;">
-                        <span>你好，请登录 </span>
+                        <span class="font_change_color">你好，请登录 </span>
                     </a>
                     <a class="red_text" href="javascript:;">
                         <span>免费注册</span>
                     </a>
-                    <span>|</span>
+                    <span class="line"></span>
                     <a href="javascript:;">
-                        <span>我的订单</span>
+                        <span class="font_change_color">我的订单</span>
                     </a>
-                    <span>|</span>
-                    <a href="javascript:;">
-                        <span>我的京东</span>
+                    <span class="line"></span>
+                    <a class="expend" href="javascript:;">
+                        <span class="font_change_color">我的京东</span>
+                        <i class="fas fa-angle-down"></i>
                     </a>
-                    <span>|</span>
+                    <span class="line"></span>
                     <a href="javascript:;">
-                        <span>京东会员</span>
+                        <span class="font_change_color">京东会员</span>
                     </a>
-                    <span>|</span>
-                    <a href="javascript:;">
+                    <span class="line"></span>
+                    <a class="expend" href="javascript:;">
                         <span>企业采购</span>
+                        <i class="fas fa-angle-down"></i>
                     </a>
-                    <span>|</span>
+                    <span class="line"></span>
+                    <a class="expend" href="javascript:;">
+                        <span>客户服务</span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <span class="line"></span>
+                    <a class="expend" href="javascript:;">
+                        <span>网站导航</span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <span class="line"></span>
                 </div>
             </div>
         </nav>
